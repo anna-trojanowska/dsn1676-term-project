@@ -30,7 +30,7 @@ body {
     background-image: url(../images/fatface.svg);
     margin-left: auto;
     margin-right: auto;
-    z-index: 1;
+    z-index: 2;
     top: 5em;
 }
 
@@ -76,12 +76,15 @@ body {
 .sprinkles {
     background-color: #8ECEA4;
     background-image: url(../images/sprinkles.svg);
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
     width: 100%;
     height: 100vh;
     position: absolute;
     -webkit-animation: scale-sprinkles 3s ease-in-out infinite alternate;
     animation: scale-sprinkles 3s ease-in-out infinite alternate;
-    z-index: 2;
+    z-index: 1;
 }
 
 @-webkit-keyframes scale-sprinkles {
