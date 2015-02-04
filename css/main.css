@@ -20,57 +20,150 @@ html {
 body {
     margin: 0;
     padding: 0;
+    overflow: hidden;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
 }
 
 
 .fatface-creative {
     height: 180px;
     width: 180px;
-    position: relative;
-    background-image: url(../images/fatface.svg);
-    margin-left: auto;
-    margin-right: auto;
-    z-index: 2;
-    top: 5em;
-}
-
-.fatface-creative:target .tear-left {
-    transform: (360deg);
-}
-
-.fatface-creative:target .tear-right {
-    transform: rotate(4320deg);
-}
-
-.tear {
     position: absolute;
-    top: 500px;
-    left: 50%;
-    -webkit-animation: fall 1s infinite;
-    animation: fall 1s infinite;
+    background-image: url(../images/fatface.svg);
+    z-index: 3;
+    top: calc(50% - 90px);
+    left: calc(50% - 90px);
 }
 
-@-webkit-keyframes fall {
+.treats {
+    position: absolute;
+    top: calc(50% - 150px);
+    left: calc(50% - 150px);
+    -webkit-animation: orbit 10s infinite linear;
+    animation: orbit 10s infinite linear;
+    z-index: 2;
+    
+    width: 300px;
+    height: 300px;
+}
+
+.cake {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 2em);
+    height: 4em;
+    -webkit-animation: orbit 10s infinite linear reverse;
+    animation: orbit 10s infinite linear reverse;
+}
+    
+.popsicle {
+    position: absolute;
+    height: 4em;
+    right: 5%;
+    top: 15%;
+    -webkit-animation: orbit 10s infinite linear reverse;
+    animation: orbit 10s infinite linear reverse;
+}
+
+.candy {
+    position: absolute; 
+    height: 4em;
+    right: 5%;
+    bottom: 15%;
+    -webkit-animation: orbit 10s infinite linear reverse;
+    animation: orbit 10s infinite linear reverse;
+}
+
+.donut {
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 2em);
+    height: 4em;
+    -webkit-animation: orbit 10s infinite linear reverse;
+    animation: orbit 10s infinite linear reverse;
+}
+    
+.icecream {
+    height: 4em;
+    position: absolute;
+    left: 5%;
+    bottom: 15%;
+    -webkit-animation: orbit 10s infinite linear reverse;
+    animation: orbit 10s infinite linear reverse;
+}
+    
+.lollipop {
+    height: 4em;
+    position: absolute;
+    left: 5%;
+    top: 15%;
+    -webkit-animation: orbit 10s infinite linear reverse;
+    animation: orbit 10s infinite linear reverse;
+}
+
+
+
+@-webkit-keyframes orbit {
     
     0% {
-        -webkit-transform: translateY(0px);
+        -webkit-transform: rotate(0deg) ;
     }
     
     100% {
-        -webkit-transform: translateY(30px);
+        -webkit-transform: rotate(360deg);
     }
 
 }
-@keyframes fall {
+
+@keyframes orbit {
     
     0% {
-        transform: translateY(0px);
+        transform: rotate(0deg) ;
     }
     
     100% {
-        transform: translateY(30px);
+        transform:rotate(360deg);
     }
 
+}
+
+.tear-left {
+    position: absolute;
+    height: 2em;
+    top: 4em;
+    left: 7%;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.fatface-creative:hover .tear-left {
+    -webkit-transform: translateY(40px);
+    transform: translateY(40px);
+    opacity: 1;
+}
+
+.tear-right {
+    position: absolute;
+    height: 2em;
+    top: 4em;
+    right: 7%;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.fatface-creative:hover .tear-right {
+    -webkit-transform: translateY(40px);
+    transform: translateY(40px);
+    opacity: 1;
 }
 
 .sprinkles {
@@ -82,6 +175,7 @@ body {
     width: 100%;
     height: 100vh;
     position: absolute;
+    background-size: 100px 100px;
     -webkit-animation: scale-sprinkles 3s ease-in-out infinite alternate;
     animation: scale-sprinkles 3s ease-in-out infinite alternate;
     z-index: 1;
@@ -105,40 +199,9 @@ body {
          transform: scale(1,1);
     }
     
-    50% {
+    100% {
          transform: scale(1.05,1.05);
     }
             
 }
 
-.treats {
-    position: absolute;
-    top: 500px;
-    left: 50%;
-    -webkit-animation: rotate 5s infinite alternate;
-    animation: rotate 5s infinite alternate;
-}
-
-@-webkit-keyframes rotate {
-    
-    0% {
-        -webkit-transform: rotate(0deg) ;
-    }
-    
-    100% {
-        -webkit-transform: rotate(360deg);
-    }
-
-}
-
-@keyframes orbit {
-    
-    0% {
-        transform: rotate(0deg) ;
-    }
-    
-    100% {
-        transform: rotate(360deg);
-    }
-
-}
