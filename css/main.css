@@ -22,13 +22,19 @@ body {
     padding: 0;
 }
 
-header {
+.banner {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 60vh;
     overflow: hidden;
 }
 
+.wordmark {
+    position: absolute;
+    top: 6px;
+    right: 1%;
+    width: 120px;
+}
 
 .fatface-creative {
     height: 180px;
@@ -132,27 +138,6 @@ header {
 
 }
 
-/*.tear-left {
-    position: absolute;
-    height: 2em;
-    top: 4em;
-    left: 7%;
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
-    opacity: 0;
-    transition: all 1s ease;
-}
-*/
-
-
-/*
-.fatface-creative:hover .tear-left {
-    -webkit-transform: translateY(40px);
-    transform: translateY(40px);
-    opacity: 1;
-}
-*/
-
 .tear-right {
     position: absolute;
     height: 2em;
@@ -231,7 +216,6 @@ header {
     margin: 20px;
     border: 0;
     outline-color: #F27581;
-    background-color: white;
 }
 
 nav {
@@ -261,6 +245,7 @@ nav a {
 
 nav a:hover {
     background-color: #FBCEBD;
+    color: white;
 }
 
 .tab-img {
@@ -279,4 +264,100 @@ nav a:hover {
 .pad-0 {
     padding: 0;
 }
+
+.abouttext {
+    text-align: center;
+    color: #F27581;
+}
+
+.music {
+    background: transparent url("../images/blue-circle.svg") no-repeat center top; 
+    position: relative;
+}
+
+.leftnote {
+    position: absolute;
+    width: 10%;
+    top: 50%;
+    left: 10%;
+    opacity: 0;
+    transition: all .5s .25s linear;
+}
+
+.js-leftnote-appear {
+    opacity: 1;
+}
+
+.rightnote {
+    position: absolute;
+    width: 12%;
+    top: 8%;
+    left: 20%;
+    opacity: 0;
+    transition: all .5s .1s linear;
+}
+
+.js-rightnote-appear {
+    opacity: 1;
+}
+
+.doublenote {
+    position: absolute;
+    width: 20%;
+    top: 18%;
+    right: 10%;
+    opacity: 0;
+    transition: all .5s linear;
+}
+
+.js-doublenote-appear {
+    opacity: 1;
+}
+
+
+
+.drawing {
+    background: transparent url("../images/yellow-circle.svg") no-repeat center top;
+    position: relative;
+}
+
+.pencil {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: all .5s linear;
+}
+
+.js-pencil-move {
+    left: 15%;
+}
+
+.reading {
+    background: transparent url("../images/purple-circle.svg") no-repeat center top; 
+    position: relative;
+}
+
+.bookclosed {
+    width: 100%;
+    opacity: 1;
+}
+
+.js-bookclosed-appear {
+    opacity: 0;
+}
+
+.bookopen {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.js-bookopen-appear {
+    opacity: 1;
+}
+    
+
 
