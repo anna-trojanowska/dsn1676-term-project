@@ -36,6 +36,75 @@ body {
     width: 120px;
 }
 
+.button-pink {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -60px;
+    border: 10px solid #fff;
+    border-radius: 100px;
+    height: 120px;
+    font-size: 1.25rem;
+    font-family: "Open Sans", sans-serif;
+    padding: 20px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 1.5rem;
+    color: #fff;
+    background-color: #F27581;
+    margin: 0;
+    transition: all 250ms linear;
+}
+
+.button-pink:hover {
+    cursor: pointer;
+    border: 10px solid #fff;
+    background-color: #FBCEBD;
+}
+
+.top-button{
+background-color: #F27581;
+color: white;
+border-radius: 5px;
+padding: 15px 20px;
+width: 20em;
+text-align: center;
+text-decoration: none;
+margin-bottom: 100px;
+}
+
+.top-button:hover {
+    cursor: pointer;
+    border: 10px solid #fff;
+    background-color: #FBCEBD;
+}
+
+.tab-panel h4,
+.tab-panel p,
+.tab-panel img {
+    opacity: 0;
+    transition: all 200ms linear;
+}
+
+.js-appear h4,
+.js-appear p,
+.js-appear img {
+    opacity: 1;
+}
+
+.pos-rel {
+    position: relative;
+}
+
+.pos-abs {
+    position: absolute;
+}
+
+.top-scroll{
+    text-align: center;
+    padding-bottom: 5em;
+}
+
 .fatface-creative {
     height: 180px;
     width: 180px;
