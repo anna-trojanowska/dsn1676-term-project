@@ -36,46 +36,35 @@ body {
     width: 120px;
 }
 
+.top-button,
 .button-pink {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -60px;
-    border: 10px solid #fff;
-    border-radius: 100px;
-    height: 120px;
-    font-size: 1.25rem;
-    font-family: "Open Sans", sans-serif;
-    padding: 20px;
-    text-decoration: none;
-    text-align: center;
-    line-height: 1.5rem;
-    color: #fff;
     background-color: #F27581;
-    margin: 0;
+    color: white;
+    border-radius: 100px;
+    height: 100px; 
+    padding: 15px 20px;
+    width: 5em;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 100px;
+    font-size: 1rem;
+    font-family: "Open Sans", sans-serif;
     transition: all 250ms linear;
 }
 
+.navlink {
+    transition: all 500ms linear;
+}
+
+.navlink:hover {
+    background-color: #FBCEBD;
+    color: white;
+}
+
+.top-button:hover,
 .button-pink:hover {
     cursor: pointer;
-    border: 10px solid #fff;
-    background-color: #FBCEBD;
-}
-
-.top-button{
-background-color: #F27581;
-color: white;
-border-radius: 5px;
-padding: 15px 20px;
-width: 20em;
-text-align: center;
-text-decoration: none;
-margin-bottom: 100px;
-}
-
-.top-button:hover {
-    cursor: pointer;
-    border: 10px solid #fff;
+    border-radius: 50px;
     background-color: #FBCEBD;
 }
 
@@ -239,6 +228,24 @@ margin-bottom: 100px;
     z-index: 1;
 }
 
+main {
+    position: relative;
+    z-index: 2;
+}
+
+.button-pink {
+    width: 10em;
+    top: -1.5em;
+    height: 3em;
+    left: calc(50% - 5em);
+    position: absolute;
+    font-size: 1.25em;
+}
+
+.portfolio {
+    height: 10em;
+}
+
 @-webkit-keyframes scale-sprinkles {
     
     0% {
@@ -310,11 +317,6 @@ nav a {
     color: #F27581;
     width: 100%;
     padding: 25px;
-}
-
-nav a:hover {
-    background-color: #FBCEBD;
-    color: white;
 }
 
 .tab-img {
