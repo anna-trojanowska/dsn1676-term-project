@@ -242,10 +242,6 @@ main {
     font-size: 1.25em;
 }
 
-.portfolio {
-    height: 10em;
-}
-
 @-webkit-keyframes scale-sprinkles {
     
     0% {
@@ -339,6 +335,15 @@ nav a {
 .abouttext {
     text-align: center;
     color: #F27581;
+}
+
+.portfoliotext {
+    text-align: center;
+    color: white;
+}
+
+.portfolio {
+    background-color: #8ECEA4;
 }
 
 .music {
