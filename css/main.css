@@ -448,19 +448,22 @@ nav a {
 }
 
 .julie {
-    position: absolute;
+    position: relative;
+    max-width: 90%;
 }
 
 .james {
-    position: absolute;
+    position: relative;
+    max-width: 90%;
 }
 
 .myanmar {
     position: relative;
+    max-width: 90%;
 }
 
 .donut-bite {
-    max-width: 12em;
+    max-width: 15em;
     align-content: center;
     text-align: center;
     position: relative;
@@ -471,17 +474,17 @@ nav a {
     opacity: 0;
 }
 
-#bite:hover {
+.js-active #bite {
     opacity: 1;
 }
 
-#donut #sprinkles {
+#sprinkles {
     transform: translateY(0);
     transition: all 200ms linear;
 }
 
-#donut:hover #sprinkles {
-    transform: translateY(50px);
+.js-active #sprinkles {
+    transform: translateY(70px);
 }
 
 

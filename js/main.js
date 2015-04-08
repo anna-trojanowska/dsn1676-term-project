@@ -15,6 +15,8 @@ var $reading = $('.reading');
 var $bookopen = $('.bookopen');
 var $bookclosed = $('.bookclosed');
 
+var $donutSection = $('.donut-bite');
+
 
 $hamBtn.on('click', function () {
   $panel.toggleClass('js-panel-open');
@@ -67,13 +69,7 @@ $('.top-scroll').localScroll();
 $('.top-scroll-button').localScroll();
 
 
-$("#slideshow > div:gt(0)").hide();
+$donutSection.waypoint(function () {
+    $donutSection.addClass('js-active');
+}, {offset: '65%'});
 
-setInterval(function() { 
-  $('#slideshow > div:first')
-    .fadeOut(1000)
-    .next()
-    .fadeIn(1000)
-    .end()
-    .appendTo('#slideshow');
-},  3000);
