@@ -337,7 +337,8 @@ nav a {
     color: #F27581;
 }
 
-.portfoliotext {
+.portfoliotext,
+.contacttext {
     text-align: center;
     color: white;
 }
@@ -345,6 +346,12 @@ nav a {
 .portfolio {
     background-color: #8ECEA4;
 }
+
+.contact {
+    background-color: #A190B4;
+}
+
+
 
 .music {
     background: transparent url("../images/blue-circle.svg") no-repeat center top; 
@@ -439,6 +446,42 @@ nav a {
 .js-bookopen-appear {
     opacity: 1;
 }
-    
+
+.julie {
+    position: absolute;
+}
+
+.james {
+    position: absolute;
+}
+
+.myanmar {
+    position: relative;
+}
+
+.donut-bite {
+    max-width: 12em;
+    align-content: center;
+    text-align: center;
+    position: relative;
+    margin: 0 auto 0;
+}
+
+#bite {
+    opacity: 0;
+}
+
+#bite:hover {
+    opacity: 1;
+}
+
+#donut #sprinkles {
+    transform: translateY(0);
+    transition: all 200ms linear;
+}
+
+#donut:hover #sprinkles {
+    transform: translateY(50px);
+}
 
 
