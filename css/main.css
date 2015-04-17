@@ -49,10 +49,12 @@ body {
     margin-bottom: 100px;
     font-size: 1rem;
     font-family: "Open Sans", sans-serif;
+    -webkit-transition: all 250ms linear;
     transition: all 250ms linear;
 }
 
 .navlink {
+    -webkit-transition: all 500ms linear;
     transition: all 500ms linear;
 }
 
@@ -72,6 +74,7 @@ body {
 .tab-panel p,
 .tab-panel img {
     opacity: 0;
+    -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
 }
 
@@ -204,6 +207,7 @@ body {
     -webkit-transform: translateY(0px);
     transform: translateY(0px);
     opacity: 1;
+    -webkit-transition: all 1s ease;
     transition: all 1s ease;
 }
 
@@ -291,7 +295,7 @@ main {
 }
 
 nav {
- padding: 0;
+    padding: 0;
 }
 
 nav ul {
@@ -483,12 +487,14 @@ nav a {
 }
 
 #sprinkles {
+    -webkit-transform: translateY(0);
     transform: translateY(0);
     -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
 }
 
 .js-active #sprinkles {
+    -webkit-transform: translateY(70px);
     transform: translateY(70px);
 }
 
