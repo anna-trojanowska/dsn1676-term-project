@@ -18,6 +18,7 @@ var $bookclosed = $('.bookclosed');
 var $donutSection = $('.donut-bite');
 
 
+
 $hamBtn.on('click', function () {
   $panel.toggleClass('js-panel-open');
 });
@@ -73,3 +74,24 @@ $donutSection.waypoint(function () {
     $donutSection.addClass('js-active');
 }, {offset: '65%'});
 
+
+
+var $btn = $('.btn');
+var $thumbs = $('.thumbnails');
+var $lightboxImg = $('.lightbox-img');
+var $lb = $('.lightbox');
+var $btnClose = $('.btn-close');
+
+$thumbs.on('click', 'a', function(e){
+	e.preventDefault();
+	var big = $(this).attr('href');
+	$lightboxImg.attr('src', big);
+	$lb.attr('data-state', 'visible');
+});
+
+$btnClose.on('click', function() {
+ $lb.attr('data-state', 'hidden');
+});
+
+
+ 

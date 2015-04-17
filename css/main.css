@@ -235,7 +235,7 @@ main {
 
 .button-pink {
     width: 10em;
-    top: -1.5em;
+    top: -2.5em;
     height: 3em;
     left: calc(50% - 5em);
     position: absolute;
@@ -364,6 +364,7 @@ nav a {
     top: 50%;
     left: 10%;
     opacity: 0;
+    -webkit-transition: all .5s .25s linear;
     transition: all .5s .25s linear;
 }
 
@@ -377,6 +378,7 @@ nav a {
     top: 8%;
     left: 20%;
     opacity: 0;
+    -webkit-transition: all .5s .1s linear;
     transition: all .5s .1s linear;
 }
 
@@ -390,6 +392,7 @@ nav a {
     top: 18%;
     right: 10%;
     opacity: 0;
+    -webkit-transition: all .5s linear;
     transition: all .5s linear;
 }
 
@@ -414,6 +417,7 @@ nav a {
     width: 100%;
     top: 0;
     left: 0;
+    -webkit-transition: all .5s linear;
     transition: all .5s linear;
 }
 
@@ -447,7 +451,7 @@ nav a {
     opacity: 1;
 }
 
-.julie {
+.tea {
     position: relative;
     max-width: 90%;
 }
@@ -480,11 +484,79 @@ nav a {
 
 #sprinkles {
     transform: translateY(0);
+    -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
 }
 
 .js-active #sprinkles {
     transform: translateY(70px);
 }
+
+
+
+
+.img-flex {
+    display: block;
+    width: 100%;
+}
+    
+.service-type {
+    font-family: "Open-Sans", sans-serif;
+    color: white;
+}
+
+[hidden] {
+  display: none;
+}
+
+main {
+    margin-top: 1rem;
+}
+
+.lightbox {
+    position: relative;
+    left: 20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    -webkit-transition: all 250ms linear;
+    transition: all 250ms linear;
+}
+
+.lightbox[data-state="visible"] {
+    opacity: 1;
+    left: 0;
+    right: 0;
+}
+
+
+.btn-close {
+  border-radius: 50px;
+  font-family: "Open-Sans", sans-serif;
+  color: #F27581;
+  font-size: 20px;
+  background: white;
+  padding: 10px 15px 10px 15px;
+  text-decoration: none;  
+}
+
+.btn-close:hover {
+  background-color: #F27581;
+  color: white;
+  text-decoration: none;
+}
+
+.lightbox-img {
+    display: block;
+    width: 100%;
+    padding: 58px;
+    margin-left: .5em;
+    margin-top: -9em;
+    z-index: 10;
+    border: 1em;
+}
+
 
 
