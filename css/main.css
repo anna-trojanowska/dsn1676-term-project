@@ -36,6 +36,7 @@ body {
     width: 120px;
 }
 
+
 .top-button,
 .button-pink {
     background-color: #F27581;
@@ -239,9 +240,8 @@ main {
 
 .button-pink {
     width: 10em;
-    top: -2.5em;
+    top: -1.5em;
     height: 3em;
-    left: calc(50% - 5em);
     position: absolute;
     font-size: 1.25em;
 }
@@ -461,20 +461,6 @@ nav a {
     opacity: 1;
 }
 
-.tea {
-    position: relative;
-    max-width: 90%;
-}
-
-.james {
-    position: relative;
-    max-width: 90%;
-}
-
-.myanmar {
-    position: relative;
-    max-width: 90%;
-}
 
 .donut-bite {
     max-width: 15em;
@@ -495,7 +481,7 @@ nav a {
 #sprinkles {
     -webkit-transform: translateY(0);
     transform: translateY(0);
-    -webkit-transition: all 200ms linear;
+    -webkit-transition: all 400ms linear;
     transition: all 200ms linear;
 }
 
@@ -532,6 +518,7 @@ nav a {
 .center {
     margin: 0 auto;
     display: block;
+    position: relative;
 }
 
 .motion-expand {
@@ -599,5 +586,8 @@ nav a {
     max-height: 20em;
 }
     
+.link {
+    color: white;
+}
 
 
