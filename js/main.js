@@ -17,6 +17,37 @@ var $bookclosed = $('.bookclosed');
 
 var $donutSection = $('.donut-bite');
 
+var $motionButton = $('.motion-button');
+var $motionExpand = $('.motion-expand');
+var $illustrationButton = $('.illustration-button');
+var $illustrationExpand = $('.illustration-expand');
+var $embroideryButton = $('.embroidery-button');
+var $embroideryExpand = $('.embroidery-expand');
+var $brandingButton = $('.branding-button');
+var $brandingExpand = $('.branding-expand');
+var $typographyButton = $('.typography-button');
+var $typographyExpand = $('.typography-expand');
+
+
+$motionButton.on('click', function () {
+    $motionExpand.toggleClass('js-expanded');
+});
+
+$illustrationButton.on('click', function () {
+    $illustrationExpand.toggleClass('js-expanded');
+});
+
+$embroideryButton.on('click', function () {
+    $embroideryExpand.toggleClass('js-expanded');
+});
+
+$brandingButton.on('click', function () {
+    $brandingExpand.toggleClass('js-expanded');
+});
+
+$typographyButton.on('click', function () {
+    $typographyExpand.toggleClass('js-expanded');
+});
 
 
 $hamBtn.on('click', function () {

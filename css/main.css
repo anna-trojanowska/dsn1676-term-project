@@ -499,8 +499,9 @@ nav a {
 }
 
 
-
-
+.img-flex {
+    width: 100%;
+}
 
 .skip-links { 
     margin: 0;
@@ -521,5 +522,76 @@ nav a {
 .skip-links a:focus { 
     top:0;
 }
+
+.center {
+    margin: 0 auto;
+    display: block;
+}
+
+.motion-expand {
+    overflow: hidden;
+    max-height: 0;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+
+.motion-button {
+    cursor: pointer;
+    background-color: #F27581;
+}
+
+.illustration-expand {
+    overflow: hidden;
+    max-height: 0;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+
+.illustration-button {
+    cursor: pointer;
+    background-color: #FFE584;
+}
+
+.embroidery-expand {
+    overflow: hidden;
+    max-height: 0;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+
+.embroidery-button {
+    cursor: pointer;
+    background-color: #7BD3F7;
+}
+
+.branding-expand {
+    overflow: hidden;
+    max-height: 0;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+
+.branding-button {
+    cursor: pointer;
+    background-color: #A190B4;
+}
+
+.typography-expand {
+    overflow: hidden;
+    max-height: 0;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+
+.typography-button {
+    cursor: pointer;
+    background-color: #FBCEBD;
+}
+
+
+.js-expanded {
+    max-height: 20em;
+}
+    
 
 
