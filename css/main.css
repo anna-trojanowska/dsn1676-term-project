@@ -370,6 +370,7 @@ nav a {
     opacity: 0;
     -webkit-transition: all .5s .25s linear;
     transition: all .5s .25s linear;
+    max-width: 230px;
 }
 
 .js-leftnote-appear {
@@ -384,6 +385,7 @@ nav a {
     opacity: 0;
     -webkit-transition: all .5s .1s linear;
     transition: all .5s .1s linear;
+    max-width: 230px;
 }
 
 .js-rightnote-appear {
@@ -398,6 +400,7 @@ nav a {
     opacity: 0;
     -webkit-transition: all .5s linear;
     transition: all .5s linear;
+    max-width: 230px;
 }
 
 .js-doublenote-appear {
@@ -407,7 +410,7 @@ nav a {
 .music,
 .drawing,
 .reading {
-    max-width: 250px;
+    max-width: 230px;
     margin: 0 auto;
 }
 
@@ -423,6 +426,7 @@ nav a {
     left: 0;
     -webkit-transition: all .5s linear;
     transition: all .5s linear;
+    max-width: 230px;
 }
 
 .js-pencil-move {
@@ -437,6 +441,7 @@ nav a {
 .bookclosed {
     width: 100%;
     opacity: 1;
+    max-width: 230px;
 }
 
 .js-bookclosed-appear {
@@ -449,6 +454,7 @@ nav a {
     top: 0;
     left: 0;
     opacity: 0;
+    max-width: 230px;
 }
 
 .js-bookopen-appear {
